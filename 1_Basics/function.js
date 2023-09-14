@@ -24,7 +24,7 @@ let result = main(10); //  a => Argument
 
 console.log(result);
 
-Logic Build Base on Function 
+// Logic Build Base on Function 
 
 function user(a){
     if(a == 10){
