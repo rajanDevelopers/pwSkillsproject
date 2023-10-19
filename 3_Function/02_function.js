@@ -1,19 +1,30 @@
 // console.log("Day 2 Of JavaScript");
 
-// use loop condition 
-// forEach(Function(element,index,array) {} ==> what you print 
-
-
-const NumberValue = [300,100,200,400]
+// use loop condition
+// forEach(Function(element,index,array) {} ==> what you print
 
 // .forEach()
-const SumNumberValue = NumberValue.forEach((element,index,array) => {
-    console.log(element,index,array);
-} )
- 
+const SumNumberValue = NumberValue.forEach((element, index, array) => {
+  // console.log(element, index, array);
+});
 
-// Using variableName.map() ==> 
+// Using variableName.map() ==>
 
+const MapFunction = (arrayValue) => {
+  arrayValue.map((el2) => {
+    // console.log(el2);
+  });
+};
+MapFunction(NumberValue);
+
+//if we wnat to add the under of Array Vallue
+const NumberValue2 = [300, 100, 200, 400, 100];
+const SSS = NumberValue2.reduce((first, second) => {
+  return first + second, 0;
+});
+console.log(SSS(NumberValue2));
+
+/* 
 const ArrrayValue = [200,50,60,70,'Rajan']
 
 ArrrayValue.forEach((el) => {
@@ -113,3 +124,5 @@ const findValueScore = score.find((el) => {
    return el > 200;
 })
 console.log(findValueScore);
+
+*/
